@@ -18,6 +18,15 @@ plugin "docker" {
     }
 }
 
+plugin "singularity" {
+    config {
+        enabled = true
+        no_cgroups = false
+        volumes_enabled = true
+        #singularity_cache = ""
+    }
+}
+
 ports {
     http = 5656
 }
